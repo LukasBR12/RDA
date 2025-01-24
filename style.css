@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor-principal: #635985; /* Roxo */
+    --cor-secundaria: #18122B; /* Fundo escuro */
+    --cor-jogadores: #FFFFFF; /* Branco */
+    --cor-gols: #635985; /* Roxo */
+    --cor-hover: #D4ADFC; /* Hover */
+    --fonte-principal: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-principal);
+    font-family: var(--fonte-secundaria);
+}
+
+header {
+    padding: 2% 0% 0% 8%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    color: var(--cor-principal);
+    font-weight: 600;
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+.cabecalho__menu__link:hover {
+    color: var(--cor-hover);
+}
+
+main {
+    padding: 5% 8%;
+}
+
+.ranking__conteudo {
+    text-align: center;
+}
+
+.conteudo__titulo {
+    font-size: 2rem;
+    font-family: var(--fonte-principal);
+    color: var(--cor-principal);
+    margin-bottom: 20px;
+}
+
+.conteudo__paragrafo {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.ranking__lista {
+    list-style: none;
+    padding: 0;
+    font-size: 1.5rem;
+}
+
+.ranking__lista li {
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.ranking__lista li strong {
+    color: var(--cor-jogadores); /* Branco para os nomes dos jogadores */
+}
+
+.ranking__lista li span {
+    color: var(--cor-gols); /* Roxo para os gols */
+}
+
+.ranking__imagem {
+    display: block;
+    margin: 40px auto;
+    max-width: 50%;
+    border: 5px solid var(--cor-principal);
+    border-radius: 15px;
+}
+
+footer {
+    background-color: var(--cor-hover);
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+    color: var(--cor-principal);
+}
+
+@media (max-width: 768px) {
+    .ranking__imagem {
+        max-width: 80%;
+    }
+}
